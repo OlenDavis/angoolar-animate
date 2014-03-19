@@ -1,0 +1,13 @@
+{
+  "name": "angoolar-animate",
+  "version": "0.0.0",
+  "homepage": "https://github.com/OlenDavis/angoolar-animate",
+  "authors": [
+    "Olen Davis <spelledlikeitsounds@gmail.com>"
+  ],
+  "description": "Avails Angular Animate to Angoolar projects.",
+  "license": "MIT",
+  "dependencies": {
+    "angoolar": "~0.3.1"
+  }
+}
