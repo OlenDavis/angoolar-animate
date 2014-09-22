@@ -1,4 +1,4 @@
-angoolar.BaseAnimation = class BaseAnimation extends angoolar.BaseFactory
+angoolar.BaseAnimation = class BaseAnimation extends angoolar.NamedDependent
 	# $_name: "BaseAnimation" # This must be overriden in extending animations, and it will be automatically converted into the form .prefix-base-animation if $_prefix: 'prefix'
 
 	$_makeName: ->
@@ -6,7 +6,7 @@ angoolar.BaseAnimation = class BaseAnimation extends angoolar.BaseFactory
 		'.' + angoolar.camelToDashes name.slice( 0, 1 ).toLowerCase() + name.slice 1
 
 	$_addToAngular: ( module ) ->
-		@$_checkName()
+		super
 		module.animation @$_makeName(), @$_makeConstructorArray()
 
 	# Override any of the following, and enjoy!
