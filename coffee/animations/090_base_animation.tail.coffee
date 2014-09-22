@@ -5,6 +5,8 @@ angoolar.BaseAnimation = class BaseAnimation extends angoolar.NamedDependent
 		super
 		'.' + angoolar.camelToDashes ( @$_prefix || '' ) + unless @$_prefix?.length then @$_name.slice( 0, 1 ).toLowerCase() + @$_name.slice 1 else @$_name
 
+	$_dependentConstructor: -> new @constructor arguments...
+
 	$_addToAngular: ( module ) ->
 		super
 		module.animation @$_makeName(), @$_makeConstructorArray()
