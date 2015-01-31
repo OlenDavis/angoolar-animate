@@ -7,7 +7,7 @@
   "description": "Avails Angular Animate to Angoolar projects.",
   "license": "MIT",
   "dependencies": {
-    "angoolar": "~0.7.0"
+    "angoolar": "~0.8.0"
   },
   "devDependencies": {
     "angular-animate": "1.4.0-beta.2"
